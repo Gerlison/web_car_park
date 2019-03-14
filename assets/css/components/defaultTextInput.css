@@ -18,6 +18,16 @@
     width: 100%;
 }
 
+.fields-control select
+{
+    border: none;
+    background: none;
+    border-bottom: 1px solid #4F7387;
+    padding: 4px;
+    outline: none;
+    width: 100%;
+}
+
 .fields-control label
 {
     color: #888;
