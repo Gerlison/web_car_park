@@ -16,6 +16,8 @@
     </head>
     <body>
       <div id="container">
+
+        <!-- Top bar -->
         <header>
           <div id="logo">
             ZA
@@ -31,7 +33,12 @@
             </a>
           </div>
         </header>
+        <!-- Top bar end -->
+
+
         <main>
+
+          <!-- Main action buttons -->
           <div id="action-buttons">
             <button
               onclick="changeView( this.id )"
@@ -64,7 +71,14 @@
               </p>
             </button>
           </div>
+          <!-- Main action buttons end -->
+
+
+
+          <!-- Painel's container -->
           <div id="painel-container">
+
+            <!-- Credit-card painel -->
             <div class="painel" id="credit-cards-painel">
               <h1>
                 Meus cartões
@@ -79,7 +93,9 @@
                 </li>
               </ul>
             </div>
+            <!-- Credit-card painel end -->
 
+            <!-- Transactions painel -->
             <div class="painel" style="display: block" id="transactions-painel">
               <h1>
                 Movimentações de crédito
@@ -122,7 +138,10 @@
                 </li>
               </ul>
             </div>
+            <!-- Transactions painel end -->
 
+
+            <!-- Vehicles painel -->
             <div class="painel" id="vehicles-painel">
               <h1>
                 Meus veículos
@@ -150,7 +169,11 @@
                 </li>
               </ul>
             </div>
+            <!-- Vehicles painel end -->
+
+
           </div>
+          <!-- Painel container end -->
         </main>
       </div>
     </body>
