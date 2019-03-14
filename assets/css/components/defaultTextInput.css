@@ -1,0 +1,53 @@
+/* ============ fields ============ */
+
+.fields-control
+{
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+
+}
+
+.fields-control input
+{
+    border: none;
+    background: none;
+    border-bottom: 1px solid #4F7387;
+    padding: 4px;
+    outline: none;
+    width: 100%;
+}
+
+.fields-control label
+{
+    color: #888;
+    font-weight: 300;
+    position: absolute;
+    left: 4px;
+    transition: all .3s;
+    bottom: 25px;
+    font-size: 10px;
+    cursor: text;
+}
+
+.fields-control input:placeholder-shown + label
+{
+    font-size: 14px;
+    bottom: 4px;    
+}
+
+.fields-control input:focus + label
+{
+    font-size: 10px;
+    bottom: 25px;
+}
+
+.fields-control i
+{
+    font-size: 14px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    color: #888;
+}
+

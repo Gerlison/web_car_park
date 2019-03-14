@@ -1,0 +1,25 @@
+.button
+{
+    width: 100%;
+    border: none; 
+    box-shadow: 0px 2px 2px #29495A;
+    padding: 14px;
+    font-size: 16px;
+    color: white;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+#send
+{
+    background: #4F7387;
+
+}
+
+#registration
+{
+    background: #4F875F;
+    box-shadow: 0px 2px 2px #29495A;
+    text-decoration: none;
+    text-align: center;
+}

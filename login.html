@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets//css/main.css">
+    <link rel="stylesheet" href="./assets//css/login.css">
+</head>
+<body>
+    <div id="container">
+        <div id="login-background"></div>
+        <div id="login-form-container">
+            <form action="#" id="login-form">
+                <h1>
+                    Acesse sua conta
+                </h1>
+                <div class="fields-control">
+                    <input placeholder=" " type="text" id="email" name="email">
+                    <label for="email">E-mail</label>
+                    <i class="fas fa-at"></i>
+                </div>
+                <div class="fields-control">
+                    <input placeholder=" " type="password" id="password" name="password">
+                    <label for="password">Senha</label>
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="fields-control">
+                    <input placeholder=" " type="text" id="city" name="city">
+                    <label for="city">Cidade</label>
+                    <i class="fas fa-thumbtack"></i>
+                </div>
+                <div id="keep-connection">
+                    <input hidden type="checkbox" id="keep-connected" name="keep-connected">
+                    <label for="keep-connected">
+                        <i class="fas fa-check"></i>
+                    </label>
+                    <p class="labeled">Mantenha-me conectado</p>
+                </div>
+
+                <button type="submit" class="button" id="send">Entrar</button>
+
+                <a href="#" id="forgot-pass" class="labeled">
+                    Esqueci minha senha
+                    <i class="fas fa-question-circle"></i>
+                </a>
+
+                <div class="separator">
+                    <p>
+                        Ou
+                    </p>
+                </div>
+
+
+                <p style="margin: 0 0 0 8px" class="labeled">Não é cadastrado?</p>
+
+                <a href="register.html" class="button" id="registration">
+                    Cadastre-se
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

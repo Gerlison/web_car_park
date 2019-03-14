@@ -1,0 +1,356 @@
+body
+{
+    background-color: #2A2A2A;
+    --green: #4F875F;
+    --blue: #325162;
+    --yellow: #87844F;
+}
+header
+{
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+header #balance
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #A2E4C9;
+    
+}
+header #balance span
+{
+    font-size: 10px;
+    color: #fff;
+    opacity: .3;
+}
+header #balance h1
+{
+    margin: 0;
+    font-size: 18px;
+}
+
+header #profile a
+{
+    padding: 10px 0;
+    color: #fff;
+}
+header #profile i
+{
+    margin-left: 10px;
+    font-size: 24px;
+}
+header #profile span
+{
+    display: none;
+}
+
+main
+{
+    padding: 16px;
+
+}
+
+main #action-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main .action-button.bigger
+{
+    width: 150px;
+    height: 100px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+main .action-button .button-label
+{
+    color: white;
+    margin: 0;
+    margin-top: 12px;
+    display: none;
+}
+main .action-button
+{
+    width: 72px;
+    height: 60px;
+    margin-bottom: 32px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+main .action-button i
+{
+    font-size: 24px;
+    color: #D6EFE8;
+}
+
+#credit-cards
+{
+    box-shadow: 0px 3px 0px #31623F;
+    background: var(--green);
+}
+#transactions
+{
+    box-shadow: 0px 3px 0px var(--blue) ;
+    background: #4F7387;
+}
+#vehicles
+{
+    box-shadow: 0px 3px 0px #524F29;
+    background: var(--yellow);
+}
+
+main .painel
+{
+    width: calc(100% - 32px);
+    height: 60vh;
+    background: #fff;
+    box-shadow: 0px 3px 23px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 16px 32px;
+    position: absolute;
+    display: none;
+    
+}
+main .painel > h1
+{
+    margin-bottom: 32px !important;
+}
+
+
+
+
+/* painels  ----------*/
+main .painel#transactions-painel li
+{
+    padding: 0 4px !important;
+}
+main .painel#transactions-painel .info
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #666;
+
+}
+main .painel#transactions-painel .info .date
+{
+    font-size: 10px;
+}
+main .painel#transactions-painel .info .value
+{
+    font-size: 18px;
+    position: relative;
+    margin-right: 12px;
+}
+main .painel#transactions-painel .info .value span
+{
+    font-size: 8px;
+    font-weight: bold;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+}
+
+main .painel#transactions-painel .negative
+{
+    color: #E4A2A2;
+}
+main .painel#transactions-painel .positive
+{
+    color: #A2E4C9;
+}
+main .painel#transactions-painel h1
+{
+    font-size: 12px;
+    color: var(--blue);
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+main .painel#transactions-painel .date-divisor
+{
+    width: 200px;
+    padding: 4px;
+    background-color: var(--blue);
+    border-radius: 50px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+
+
+
+
+main .painel#credit-cards-painel h1
+{
+    font-size: 12px;
+    color: var(--green);
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+main .painel#vehicles-painel li
+{
+    padding: 0 !important;
+    
+}
+main .painel#vehicles-painel li .block
+{
+    padding: 8px;
+    flex: 1;
+    color: #898989;    
+
+}
+main .painel#vehicles-painel li .block:first-child
+{
+    border-right: 1px solid #DBDBDB;
+}
+main .painel#vehicles-painel h1
+{
+    font-size: 12px;
+    color: var(--yellow);
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+main .painel .type
+{
+    color: #898989;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main .painel .type i
+{
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+main .painel ul
+{
+    padding: 0;
+}
+main .painel ul li
+{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: #DBDBDB;
+    border-width: 1px 0 0 0;
+    padding: 8px;
+
+}
+
+.painel::after
+{
+    content: "";
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent #fff transparent;
+
+    transform: translateX(-50%);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+.painel#credit-cards-painel::after
+{
+    left: 10%;
+
+}
+
+.painel#transactions-painel::after
+{
+    left: 50%;
+
+}
+
+.painel#vehicles-painel::after
+{
+    left: 90%;
+}
+
+
+@media only screen and (min-width: 768px)
+{
+    header #profile span
+    {
+        display: initial;
+    }
+}
+@media only screen and (min-width: 900px)
+{
+    #painel-container,
+    #action-buttons
+    {
+        display: flex;
+        flex-direction: row;
+        max-width: 1240px;
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        justify-content: space-around;
+    }
+    main .action-button .button-label
+    {   
+        display: block;
+    }
+    #action-buttons
+    {
+        width: 80%;
+        max-width: 1000px;
+        margin: 32px auto;
+    }
+
+    main .painel
+    {
+        display: block;
+        position: relative;
+        max-width: 360px;
+        margin: 0 16px;
+    }
+    main .painel::after
+    {
+        display: none;
+    }
+
+    header
+    {
+        padding: 16px 7.32%;
+    }
+}
