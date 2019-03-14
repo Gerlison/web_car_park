@@ -14,8 +14,56 @@
       <link rel="stylesheet" href="./assets/css/main.css" />
       <link rel="stylesheet" href="./assets/css/painel.css" />
     </head>
+
     <body>
       <div id="container">
+        <!-- User info menu -->
+        <div id="menu-backdrop"></div>
+        <div id="menu-container">
+          <table cellpadding="10px" align="center">
+            <tr>
+              <td>
+                Francisco Gerlison Roque Domingos
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Data de Nasc.</label>
+                28/12/1999
+              </td>
+              <td>
+                <label>CPF</label>
+                077.777.777-77
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <label>E-mail</label>
+                  franciscojerlison1@gmail.com
+              </td>
+            </tr>
+            <tr>
+                <td>
+                  <label>Telefone</label>
+                  (88) 9 9677-4869
+                </td>
+                <td>
+                  <label>Cidade</label>
+                  Piquet Carneiro
+                </td>
+              </tr>
+          </table>
+
+          <div id="menu-footer">
+            <a href="#">
+                <i class="fas fa-user-edit"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-sign-out-alt"></i>
+            </a>
+          </div>
+        </div>
+        <!-- User info menu end -->
 
         <!-- Top bar -->
         <header>
@@ -35,9 +83,7 @@
         </header>
         <!-- Top bar end -->
 
-
         <main>
-
           <!-- Main action buttons -->
           <div id="action-buttons">
             <button
@@ -47,7 +93,7 @@
             >
               <i class="far fa-credit-card"></i>
               <p class="button-label">
-                  Adicionar Cartão de crédito
+                Adicionar Cartão de crédito
               </p>
             </button>
             <button
@@ -57,7 +103,7 @@
             >
               <i class="fas fa-plus"></i>
               <p class="button-label">
-                  Adicionar crédito
+                Adicionar crédito
               </p>
             </button>
             <button
@@ -67,17 +113,14 @@
             >
               <i class="fas fa-car-side"></i>
               <p class="button-label">
-                  Adicionar veículo
+                Adicionar veículo
               </p>
             </button>
           </div>
           <!-- Main action buttons end -->
 
-
-
           <!-- Painel's container -->
           <div id="painel-container">
-
             <!-- Credit-card painel -->
             <div class="painel" id="credit-cards-painel">
               <h1>
@@ -101,7 +144,7 @@
                 Movimentações de crédito
               </h1>
               <div class="date-divisor">
-                  Fevereiro de 2019
+                Fevereiro de 2019
               </div>
               <ul>
                 <li>
@@ -140,7 +183,6 @@
             </div>
             <!-- Transactions painel end -->
 
-
             <!-- Vehicles painel -->
             <div class="painel" id="vehicles-painel">
               <h1>
@@ -170,13 +212,12 @@
               </ul>
             </div>
             <!-- Vehicles painel end -->
-
-
           </div>
           <!-- Painel container end -->
         </main>
       </div>
     </body>
+
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/painel.js"></script>
   </html>

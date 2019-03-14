@@ -5,6 +5,48 @@ body
     --blue: #325162;
     --yellow: #87844F;
 }
+
+#menu-backdrop
+{
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.38)
+}
+#menu-container
+{
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px;
+    z-index: 11;
+    position: fixed;
+    top: 90px;
+    right: 50%;
+    transform: translateX(50%)
+}
+#menu-container table tr
+{
+    border-bottom: 1px solid #ACACAC;
+    display: flex;
+    justify-content: center;
+}
+#menu-footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 16px;
+    padding-top: 24px;
+}
+#menu-footer a
+{
+    font-size: 24px;
+    color: #8C8C8C;
+}
+
 header
 {
     width: 100%;
@@ -13,6 +55,7 @@ header
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 11;
 }
 
 header #logo
@@ -352,5 +395,10 @@ main .painel ul li
     header
     {
         padding: 16px 7.32%;
+    }
+    #menu-container
+    {
+     right: 7.32%;   
+     transform: translateX(0)
     }
 }
