@@ -28,3 +28,23 @@ const defaultIcons = [
     });
     $("#" + id + "-painel").show();
   }
+
+
+  function openMenu(){
+    $('#menu-backdrop').fadeIn('slow');
+    $('#menu-container').slideDown('fast');
+    $('html').css({
+      'overflow': 'hidden'
+    })
+
+    $('#profile a').attr('href','javascript:closeMenu()')
+  }
+
+  function closeMenu(){
+    $('#menu-backdrop').fadeOut('slow');
+    $('#menu-container').fadeOut('fast');
+    $('html').css({
+      'overflow': 'auto '
+    })
+    $('#profile a').attr('href','javascript:openMenu()')
+  }
