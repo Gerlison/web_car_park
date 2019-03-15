@@ -19,6 +19,8 @@ body
 }
 #menu-container
 {
+    max-width: 90vw;
+    width: 100%;
     background: #fff;
     border-radius: 5px;
     padding: 0 16px;
@@ -28,6 +30,10 @@ body
     right: 50%;
     transform: translateX(50%);
     display: none;
+}
+#menu-container table
+{
+    width: 100%;
 }
 #menu-container table tr
 {
@@ -39,7 +45,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    min-width: 200px;;
+    min-width: 100px;;
     width: 100%;
     height: 54px;
     justify-content: space-between;
@@ -425,6 +431,15 @@ main .painel ul li
     #menu-container
     {
      right: 7.32%;   
-     transform: translateX(0)
+     transform: translateX(0);
+     width: 400px;
+    }
+}
+
+@media only screen and (max-width: 420px)
+{
+    #menu-container td
+    {
+        font-size: 12px;
     }
 }
