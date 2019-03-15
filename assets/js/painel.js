@@ -36,15 +36,25 @@ const defaultIcons = [
     $('html').css({
       'overflow': 'hidden'
     })
-
+    $('#profile a i').css({
+      'transform': 'rotate(180deg)',
+      'transition': '.3s'
+    })
     $('#profile a').attr('href','javascript:closeMenu()')
   }
 
   function closeMenu(){
     $('#menu-backdrop').fadeOut('slow');
     $('#menu-container').fadeOut('fast');
+
     $('html').css({
-      'overflow': 'auto '
+      'overflow': 'auto'
     })
+
+    $('#profile a i').css({
+      'transform': 'rotate(0deg)',
+      'transition': '.3s'
+    })
+
     $('#profile a').attr('href','javascript:openMenu()')
   }
