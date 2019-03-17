@@ -273,7 +273,10 @@ main .painel#transactions-painel .date-divisor
     font-size: 10px;
     text-align: center;
     color: white;
-    margin: auto;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
 }
 
 
@@ -383,6 +386,10 @@ main .painel ul li
 
 @media only screen and (min-width: 768px)
 {
+    .btn-trash{
+        color: red;
+        cursor: pointer;
+    }
     header #profile span
     {
         display: initial;
@@ -390,6 +397,10 @@ main .painel ul li
 }
 @media only screen and (min-width: 900px)
 {
+    .btn-trash{
+        color: red;
+        cursor: pointer;
+    }
     #painel-container,
     #action-buttons
     {
@@ -438,6 +449,10 @@ main .painel ul li
 
 @media only screen and (max-width: 420px)
 {
+    .btn-trash{
+        color: red;
+        cursor: pointer;
+    }
     #menu-container td
     {
         font-size: 12px;

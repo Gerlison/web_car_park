@@ -68,7 +68,7 @@
         <!-- Top bar -->
         <header>
           <div id="logo">
-            ZA
+            Zona Azul
           </div>
           <div id="balance">
             <span>Saldo</span>
@@ -130,9 +130,10 @@
                 <li>
                   <div class="type">
                     <i class="far fa-credit-card"></i>
-                    Visa
+                    <img src="https://www.mercadopago.com/org-img/MP3/API/logos/visa.gif" alt="visa">
                   </div>
-                  **** **** **** 3109
+                  <strong>Final 4521</strong>
+                  <div class="btn-trash"><a rel="{{ route('product.edit', ['product' => $item->id]) }}" title="Deletar Cartão de Crédito" name="Deletar"><i class="far fa-trash-alt"></i></a></div>
                 </li>
               </ul>
             </div>
@@ -143,10 +144,10 @@
               <h1>
                 Movimentações de crédito
               </h1>
-              <div class="date-divisor">
-                Fevereiro de 2019
-              </div>
               <ul>
+                <div class="date-divisor">
+                  Fevereiro de 2019
+                </div>
                 <li>
                   <div class="type">
                     <i class="fas fa-cash-register"></i>
@@ -163,6 +164,9 @@
                     </div>
                   </div>
                 </li>
+                <div class="date-divisor">
+                  Fevereiro de 2019
+                </div>
                 <li>
                   <div class="type">
                     <i class="fas fa-cash-register"></i>
@@ -198,6 +202,7 @@
                     <i class="fas fa-file-signature"></i>
                     GAY-0800
                   </div>
+                  <div class="btn-trash"><a rel="{{ route('product.edit', ['product' => $item->id]) }}" title="Deletar Cartão de Crédito" name="Deletar"><i class="far fa-trash-alt"></i></a></div>
                 </li>
                 <li>
                   <div class="block">
@@ -208,6 +213,7 @@
                     <i class="fas fa-file-signature"></i>
                     GAY-0800
                   </div>
+                  <div class="btn-trash"><a rel="{{ route('product.edit', ['product' => $item->id]) }}" title="Deletar Cartão de Crédito" name="Deletar"><i class="far fa-trash-alt"></i></a></div>
                 </li>
               </ul>
             </div>
