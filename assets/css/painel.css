@@ -206,7 +206,7 @@ main .painel
     padding: 16px 32px;
     position: absolute;
     display: none;
-    
+    overflow-y: scroll;
 }
 main .painel > h1
 {
