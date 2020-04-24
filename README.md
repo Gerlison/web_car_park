@@ -1,2 +1,2 @@
 # Webcar
-## Sistema privado para venda de tickets de estacionamento
+## Sistema para venda de tickets de estacionamento
