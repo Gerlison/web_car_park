@@ -1,7 +1,5 @@
-<div style="display: inline-block;">  
-    <img src="./assets/images/screenshot2.png" width="50%" height="50%" />
-    <img src="./assets/images/screenshot1.png" width="50%" height="50%" style="float: right" />
-</div>
+  
+   
 
 # About
 
@@ -15,3 +13,7 @@ Every programmer should start with a solid base on basic. That's the reason for 
 ## Is it open to contributions?
 
 Yes, feel free to contribute to this project as you want, I'll be glad to analyse your PRs.
+
+## Screenshots
+<img src="./assets/images/screenshot2.png" />
+<img src="./assets/images/screenshot1.png" />
