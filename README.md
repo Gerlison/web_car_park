@@ -1,6 +1,6 @@
-<div style="display: inline-flex;">  
+<div style="display: inline-block;">  
     <img src="./assets/images/screenshot2.png" width="50%" height="50%" />
-    <img src="./assets/images/screenshot1.png" width="50%" height="50%" />
+    <img src="./assets/images/screenshot1.png" width="50%" height="50%" style="float: right" />
 </div>
 
 # About
