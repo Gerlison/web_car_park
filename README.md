@@ -1,6 +1,6 @@
 # Car Park
 
-![GitHub](https://img.shields.io/github/license/Gerlison/web_car_park)
+[![GitHub](https://img.shields.io/github/license/Gerlison/web_car_park)](https://github.com/Gerlison/web_car_park/blob/master/LICENSE)
 
 This project is a study about vanilla HTML and CSS.
 A set of web pages for a car park system, where the user could register, login, and manage your parking tickets.
